@@ -46,16 +46,93 @@ customTheme : "style"
 ---
 
 ### Basic CI pipeline
-<div class="scroll-container">
-    <img src="./img/ci_1.png" style="min-width:100%;"/>
-</div>
+```yaml
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-ci-python-3_9:
+    uses: settler-hackathon/github-templates/.github/workflows/python-ci.yml@main
+    with:
+      python-version: "3.9"
+
+  build-ci-python-3_10:
+    uses: settler-hackathon/github-templates/.github/workflows/python-ci.yml@main
+    with:
+      python-version: "3.10"
+
+  build-ci-python-3_11:
+    uses: settler-hackathon/github-templates/.github/workflows/python-ci.yml@main
+    with:
+      python-version: "3.11"
+
+```
 
 ---
 
 ### Basic CD pipeline
-<div class="scroll-container">
-    <img src="./img/cd_1.png" style="min-width:100%;"/>
-</div>
+```yaml
+name: CD Pipeline
+
+on:
+  workflow_run:
+    workflows: ["CI Pipeline"]
+    types:
+      - completed
+env:
+  PYTHON_DEPLOYMENT_VERSION: 3.11
+  ENV: prod
+
+
+jobs:
+  test-python-3_9:
+    permissions:
+      contents: read
+      packages: write
+    uses: settler-hackathon/github-templates/.github/workflows/python-cd.yml@main
+    with:
+      python-version: "3.9"
+      ENV: $ENV
+      REPO-NAME: "github-actions"
+
+
+  test-python-3_10:
+    permissions:
+      contents: read
+      packages: write
+    uses: settler-hackathon/github-templates/.github/workflows/python-cd.yml@main
+    with:
+      python-version: "3.10"
+      ENV: $ENV
+      REPO-NAME: "github-actions"
+
+  test-python-3_11:
+    permissions:
+      contents: read
+      packages: write
+    uses: settler-hackathon/github-templates/.github/workflows/python-cd.yml@main
+    with:
+      python-version: "3.11"
+      ENV: $ENV
+      REPO-NAME: "github-actions"
+
+
+  publish-image-python-3_11:
+    needs: ["test-python-3_9","test-python-3_10","test-python-3_11"]
+    permissions:
+      contents: read
+      packages: write
+    uses: settler-hackathon/github-templates/.github/workflows/python-push-image.yml@main
+    with:
+      ENV: $ENV
+      REPO-NAME: "github-actions"
+      PYTHON_DEPLOYMENT_VERSION: "3.11"
+```
 
 ---
 
