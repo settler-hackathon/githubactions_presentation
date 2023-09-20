@@ -27,34 +27,34 @@ customTheme : "style"
 ---
 
 ### How to work with Github Actions?
-<img src="./img/github_docs.PNG" style="max-width:1400px;"/>
+<img src="./img/github_docs.PNG" style="max-width:1000px;"/>
 
 ---
 
 ### It looks familiar to Azure Pipelines
 
-<img src="./img/actions_tab.PNG" style="max-width:1400px;"/>
+<img src="./img/actions_tab.PNG" style="max-width:1000px;"/>
 
 
 ---
 
 ### How to start
 
-<img src="./img/github_folder.PNG" style="max-width:1400px;"/>
+<img src="./img/github_folder.PNG" style="width:450px;"/>
 
 
 ---
 
 ### Basic CI pipeline
 <div class="scroll-container">
-    <img src="./img/ci_1.png" style="min-width:1000px;"/>
+    <img src="./img/ci_1.png" style="min-width:100%;"/>
 </div>
 
 ---
 
 ### Basic CD pipeline
 <div class="scroll-container">
-    <img src="./img/cd_1.png" style="min-width:2000px;"/>
+    <img src="./img/cd_1.png" style="min-width:100%;"/>
 </div>
 
 ---
