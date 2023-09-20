@@ -1,6 +1,7 @@
 ---
 customTheme : "style"
 ---
+
 # Why GHA
 - Ørsted is moving to **Github** soon anyway
 - CiCd scripts needs **improvement**. 
@@ -48,4 +49,10 @@ customTheme : "style"
     <img src="./img/cd_1.png" style="min-width:2000px;"/>
 </div>
 
+---
+
+### Simple Demo
+Pray to the demo gods!
+
+---
 
