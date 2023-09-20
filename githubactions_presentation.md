@@ -2,20 +2,20 @@
 customTheme : "style"
 ---
 
-# Why GHA
-- Ørsted is moving to **Github** soon anyway
-- CiCd scripts needs **improvement**. 
-- Moving to GitHub => **simplify** our CiCD
-- GHA has very large **community**
-- Introducing ***templates***
-- Dependabot and other tools
-
----
-
 
 ### Github Actions in Action
 
 <img src="./img/actions_vs_pipelines.jpg" style="max-width:1400px;"/>
+
+---
+
+# Why GHA
+- Ørsted is moving to <span style="color:orange">**Github**</span> soon anyway
+- CiCd scripts needs <span style="color:#239aa9 ">**improvement**</span>.
+- Moving to GitHub => <span style="color:red">**simplify**</span> our Ci\/CD
+- GHA has very large <span style="color:#ccfc6f">**community**</span>
+- Introducing <span style="color:orange">***templates***</span>
+- Dependabot and other tools
 
 ---
 
@@ -53,6 +53,7 @@ customTheme : "style"
 ---
 
 ### Simple Demo
+
 Pray to the demo gods!
 
 ---
