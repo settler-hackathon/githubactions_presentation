@@ -11,7 +11,7 @@ customTheme : "style"
 
 # Why GHA
 - Ørsted is moving to <span style="color:orange">**Github**</span> soon anyway
-- CiCd scripts needs <span style="color:#239aa9 ">**improvement**</span>.
+- Ci\/Cd scripts needs <span style="color:#239aa9 ">**improvement**</span>.
 - Moving to GitHub => <span style="color:red">**simplify**</span> our Ci\/CD
 - GHA has very large <span style="color:#ccfc6f">**community**</span>
 - Introducing <span style="color:orange">***templates***</span>
@@ -24,7 +24,7 @@ customTheme : "style"
 
 ---
 
-### Where are the actions(pipelines)?
+### It looks familiar to Azure Pipelines
 
 <img src="./img/actions_tab.PNG" style="max-width:1400px;"/>
 
