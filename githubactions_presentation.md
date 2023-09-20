@@ -8,6 +8,7 @@ customTheme : "style"
 - Moving to GitHub => **simplify** our CiCD
 - GHA has very large **community**
 - Introducing ***templates***
+- Dependabot and other tools
 
 ---
 
