@@ -1,6 +1,14 @@
 ---
 customTheme : "style"
 ---
+# Why GHA
+- Ørsted is moving to **Github** soon anyway
+- CiCd scripts needs **improvement**. 
+- Moving to GitHub => **simplify** our CiCD
+- GHA has very large **community**
+- Introducing ***templates***
+
+---
 
 
 ### Github Actions in Action
