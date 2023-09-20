@@ -5,7 +5,14 @@ customTheme : "style"
 
 ### Github Actions in Action
 
-<img src="./img/actions_vs_pipelines.jpg" style="max-width:1400px;"/>
+<img src="./img/actions_vs_pipelines.jpg" style="max-height:400px;"/>
+<br>
+<img src="./img/team_lars.PNG" style="max-width:200px;border-radius: 20px"/>
+<img src="./img/team_taw.PNG" style="max-width:200px;border-radius: 20px"/>
+<img src="./img/team_martin.PNG" style="max-width:200px;border-radius: 20px"/>
+<img src="./img/team_wal.PNG" style="max-width:200px;border-radius: 20px"/>
+
+
 
 ---
 
